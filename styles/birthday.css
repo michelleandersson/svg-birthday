@@ -5,7 +5,8 @@ body {
 
 .card {
     margin: 10px;
-    height: calc(100vh - 30px); 
+    width: 97%;
+    height: calc(100vh - 3%); 
     background-color: cadetblue;
     
 }
@@ -31,7 +32,16 @@ body {
 .card__cake {
     max-width: 300px;
     width: 100%;
+    animation: cake 5s infinite;
 }
+
+@keyframes cake {
+    0% {transform: scale(1.0)}
+    25% {transform: scale(1.1)}
+    50% {transform: scale(1.2)}
+    75% {transform: scale(1.1)}
+    100% {transform: scale(1.0)}
+  }
 
 .card__cat {
     max-width: 300px;
