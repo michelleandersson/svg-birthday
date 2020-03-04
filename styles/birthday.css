@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.card {
+    margin: 10px;
+    height: calc(100vh - 30px); 
+    background-color: cadetblue;
+    
+}
+
+.card__animation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+.card__title {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 72px;
+    background: linear-gradient(rgb(110, 110, 250), rgb(142, 45, 167));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-self: start;
+}
+
+.card__cake {
+    max-width: 300px;
+    width: 100%;
+}
+
+.card__cat {
+    max-width: 300px;
+    width: 100%;
+    position: relative;
+}
+
+.card__glasses {
+    max-width: 200px;
+    width: 100%;
+    animation: dealWithIt 5s infinite;
+    position: absolute;
+    left: 95px;
+    top: 70px;
+}
+
+@keyframes dealWithIt {
+
+    1% {
+      transform: translate3d(0,-500px,0) scale(1);
+      opacity: 1;
+    }
+
+
+    30% {
+      transform: translate3d(0,160px,0) scale(1);
+      opacity: 1;
+    }
+
+    70% {
+      transform: translate3d(0,160px,0) scale(1);
+      opacity: 1;
+    }
+
+    85% {
+      transform: translate3d(0,160px,0) scale(1);
+      opacity: 1;
+    }
+
+    99% {
+      transform: translate3d(0,-2000px,0) scale(1);
+    }
+
+    to {
+      visibility: hidden;
+      opacity: 0;
+    }
+
+  }
+
+.card__fireworks {
+    max-width: 300px;
+    width: 100%;
+    animation: fireworks 3s infinite;
+}
+
+@keyframes fireworks {
+    0% {transform: rotate(0)}
+    25% {transform: rotate(50deg)}
+    50% {transform: rotate(160deg); filter: hue-rotate(270deg)}
+    75% {transform: rotate(70deg)}
+    100% {transform: rotate(0deg)}
+  }
+
+
