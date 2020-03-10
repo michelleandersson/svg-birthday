@@ -27,6 +27,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     align-self: start;
+    background-clip: text;
 }
 
 .card__cake {
